@@ -1,5 +1,5 @@
 main:
-	latexmk -pdf main.tex
-	move main.pdf ../out/Guia_permiso_del_menor.pdf 
+	latexmk -xelatex main.tex
+	move main.pdf ../out/Informe_de_Pasantia_Ever_Ortega.pdf 
 clean:
-	del *.aux *.out *.fls *.fdb_latexmk *.toc *.toc *.pre *.log 
+	del *.aux *.out *.fls *.fdb_latexmk *.toc *.toc *.pre *.log *.xdv
