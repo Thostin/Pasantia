@@ -1,11 +1,20 @@
-\documentclass[a4paper]{scrartcl}
+\documentclass[11pt, a4paper]{scrartcl}
 
 %  No sé por qué quieren que la fuente sea Arial. 
 %  Helvetica es lo que más se aproxima con pdflatex
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
 
-\usepackage[sexy]{evanspanish}
+\usepackage[sexy]{evan}           % loads its own layout
+\usepackage[
+  paperwidth=216mm,
+  paperheight=330mm,
+  top=1in
+]{geometry}
+
+\setlength{\headheight}{20pt}   % change to desired value
+\setlength{\headsep}{22pt}      % optional: space between header and text
+\setlength{\topmargin}{0pt}     % optional: top margin adjustment
 
 \usepackage{multirow}
 
@@ -153,30 +162,31 @@ mi compromiso con la mejora continua y la excelencia en el ámbito
 del desarrollo de software.
 
 \clearpage
-{
-	\renewcommand{\arraystretch}{1.4}
-	\begin{center}
-		\begin{tabular}{|c|l|}
-			\hline
+\section{Cuadro de aprobación}
+ {
+  \renewcommand{\arraystretch}{2}
+  \begin{center}
+	  \begin{tabular}{|c|l|}
+		  \hline
 
-			\multirow{4}{*}{PRESENTADO POR:} & NOMBRE Y APELLIDO DEL PASANTE:                              \\ \cline{2-2}
-			                                 & \                                                           \\ \cline{2-2}
-			                                 & FIRMA:                                                      \\ \cline{2-2}
-			                                 & \                                                           \\
-			\hline
+		  \multirow{4}{*}{PRESENTADO POR:} & NOMBRE Y APELLIDO DEL PASANTE:                              \\ \cline{2-2}
+		                                   & \                                                           \\ \cline{2-2}
+		                                   & FIRMA:                                                      \\ \cline{2-2}
+		                                   & \                                                           \\
+		  \hline
 
-			\multirow{8}{*}{APROBADO POR:}   & NOMBRE Y APELLIDO DEL TUTOR DE PASANTÍA                     \\ \cline{2-2}
-			                                 & \                                                           \\ \cline{2-2}
-			                                 & FIRMA:                                                      \\ \cline{2-2}
-			                                 & \                                                           \\ \cline{2-2}
-			                                 & Nombre y apellido del Director de la institución educativa: \\ \cline{2-2}
-			                                 & \                                                           \\ \cline{2-2}
-			                                 & FIRMA:                                                      \\ \cline{2-2}
-			                                 & \                                                           \\ \hline
+		  \multirow{8}{*}{APROBADO POR:}   & NOMBRE Y APELLIDO DEL TUTOR DE PASANTÍA:                    \\ \cline{2-2}
+		                                   & \                                                           \\ \cline{2-2}
+		                                   & FIRMA:                                                      \\ \cline{2-2}
+		                                   & \                                                           \\ \cline{2-2}
+		                                   & Nombre y apellido del Director de la institución educativa: \\ \cline{2-2}
+		                                   & \                                                           \\ \cline{2-2}
+		                                   & FIRMA:                                                      \\ \cline{2-2}
+		                                   & \                                                           \\ \hline
 
-			LUGAR Y FECHA:                   & \                                                           \\
-			\hline
-		\end{tabular}
-	\end{center}
-}
+		  LUGAR Y FECHA:                   & Asunción, \today                                            \\
+		  \hline
+	  \end{tabular}
+  \end{center}
+ }
 \end{document}
